@@ -1,0 +1,187 @@
+CREATE (tos:Symptom {name:'Tos seca', disease:['resfriado','gripe','covid-19']});
+CREATE (fiebre:Symptom {name:'Fiebre', disease:['gripe','covid-19']});
+CREATE (cansancio:Symptom {name:'Cansancio', disease:['gripe','covid-19']});
+CREATE (congestion:Symptom {name:'Congestión nasal', disease:['resfriado','gripe','rinitis', 'covid-19']});
+CREATE (secrecion:Symptom {name:'Secreción nasal', disease:['resfriado','gripe','rinitis','covid-19']});
+CREATE (dolor_garganta:Symptom {name:'Dolor de garganta', disease:['resfriado','gripe','covid-19']});
+CREATE (dolor_cabeza:Symptom {name:'Dolor de cabeza', disease:['gripe','covid-19']});
+CREATE (diarrea:Symptom {name:'Diarrea', disease:['covid-19']});
+CREATE (dificultad_respirar:Symptom {name:'Dificultad para respirar', disease:['covid-19']});
+CREATE (dolor_muscular:Symptom {name:'Dolor muscular', disease:['gripe']});
+CREATE (estornudo:Symptom {name:'Estornudo', disease:['rinitis']});
+CREATE (ojos_irritados:Symptom {name:'Ojos irritados', disease:['rinitis']});
+
+CREATE (luis:Uninfected {name:'Luis Perez', born:1964});
+CREATE (ricardo:Uninfected {name:'Ricardo Marquez', born:1998});
+CREATE (ana:Uninfected {name:'Ana Lopez', born:1980});
+CREATE (lorena:Uninfected {name:'Lorena Guzman', born:1974});
+CREATE (eduardo:Uninfected {name:'Eduardo Ruiz', born:1945});
+CREATE (juan:Uninfected {name:'Juan Gamboa', born:2001});
+CREATE (milena:Uninfected {name:'Milena Roa', born:2013});
+CREATE (luisa:Uninfected {name:'Luisa Quitian', born:2019});
+CREATE (amanda:Uninfected {name:'Amanda Gutierrez', born:1985});
+CREATE (felipe:Uninfected {name:'Felipe Nariño', born:1976});
+CREATE (jerson:Uninfected {name:'Jerson Gonzalez', born:1993});
+CREATE (jairo:Uninfected {name:'Jairo Castillo', born:1978});
+CREATE (ernesto:Uninfected {name:'Ernesto Farias', born:1965});
+CREATE (dolly:Uninfected {name:'Dolly Ruiz', born:1988});
+CREATE (carlos:Uninfected {name:'Carlos Bejarano', born:1991});
+CREATE (camilo:Uninfected {name:'Camilo Pinto', born:1999});
+CREATE (juliana:Uninfected {name:'Juliana Galvis', born:2004});
+CREATE (andrea:Uninfected {name:'Andrea Serna', born:2007});
+CREATE (jorge:Uninfected {name:'Jorge Atuesta', born:1987});
+CREATE (adriana:Uninfected {name:'Adriana Tono', born:2017});
+
+create (universidadDistrital40:Location {name:'Universidad Distrital Fco Jose de Caldas sede 40', lat:'4.6281098', lon:'-74.0676468,17', area: 3000, reducedSpace: true});
+
+create (universidadNacionalBogota:Location {name:'Universidad Nacional de Colombia', lat:'4.6275415', lon:'-74.1208623,14', area: 200000, reducedSpace: true});
+
+create (centroComercialGranEstacion:Location {name:'Centro comercial Gran Estacion', lat:'4.6317263', lon:'-74.1314819,14', area: 20000, reducedSpace: true});
+
+create (colegioLuisCarlosGalan:Location {name:'Colegio Luis Carlos Galan Sarmiento', lat:'4.6123205', lon:'-74.1214572,18', area: 4000, reducedSpace: true});
+
+create (estadioElCampin:Location {name:'Estadio Nemesio Camacho el Campin', lat:'4.6216831', lon:'-74.1349947,13', area: 20000, reducedSpace: true});
+
+create (parqueSimonBolivar:Location {name:'Parque Metropolitano Simon Bolivar', lat:'4.6584796', lon:'-74.0934579', area: 200000, reducedSpace: false});
+
+create (bancoDeBogotaDG:Location {name:'Banco De Bogotá Dirección General', lat:'4.6188495', lon:'-74.1125769,14', area: 3000, reducedSpace: true});
+
+create (parqueNacional:Location {name:'Parque Nacional', lat:'4.6188495', lon:'-74.1115985', area: 150000, reducedSpace: false});
+
+create (hipermercadoExitoAmericas:Location {name:'Exito av 68 con americas', lat:'4.6223315', lon:'-74.1274438', area: 30000, reducedSpace: true});
+
+create (hospitalSanIgnacio:Location {name:'Hospital San Ignacio', lat:'4.6615898', lon:'-74.1322678,13', area: 60000, reducedSpace: true});
+
+create (restauranteCorral39:Location {name:'El corral Plaza 39', lat:'4.6203744', lon:'-74.1109893,14', area: 300, reducedSpace: true});
+
+create (tallerAutomotrizMarcali:Location {name:'Renault Marcali calle 35', lat:'4.6182433', lon:'-74.1125769,14', area: 3000, reducedSpace: true});
+
+create (estacionTransmilenioCalle100:Location {name:'Estacion calle 100', lat:'4.6408412', lon:'-74.1250308,13', area: 3000, reducedSpace: true});
+
+create (restauranteMuyKr13:Location {name:'MUY calle 36', lat:'4.618931', lon:'-74.1125769,14', area: 500, reducedSpace: true});
+
+create (colegioNEsguerra:Location {name:'Colegio Nicolas Esguerra', lat:'4.6280303', lon:'-74.1372226,14', area: 7000, reducedSpace: true});
+
+create (bancolombiaKr13:Location {name:'Bancolombia calle 60 con 13', lat:'4.6130947', lon:'-74.1294169,13', area: 300, reducedSpace: true});
+
+create (hospitalMederi:Location {name:'Hospital Mederi', lat:'4.6097984', lon:'-74.1198081,14', area: 8000, reducedSpace: true});
+
+create (caiTeusaquillo:Location {name:'CAI Teusaquillo', lat:'4.618931', lon:'-74.1144627,14', area: 80, reducedSpace: true});
+
+create (centroCentroMayor:Location {name:'Centro Mayor', lat:'4.6026372', lon:'-74.1293467,15', area: 20000, reducedSpace: true});
+
+create (hipermercadoAlkostoCll68:Location {name:'Alkosto calle 68', lat:'4.6467335', lon:'-74.1397934,13', area: 30000, reducedSpace: true});
+
+create (universidadCentral:Location {name:'Universidad Central', lat:'4.616216', lon:'-74.11202,14', area: 30000, reducedSpace: true});
+
+
+
+create (DanielaQuiroga:Infected {name:'Daniela Quiroga', born: 1997});
+create (DavidAmaya:Infected {name:'David Amaya', born: 1999});
+create (FernandoCarrillo:Infected {name:'Fernando Carrillo', born: 1950});
+create (JohannaMartinez:Infected {name:'Johanna Martinez', born: 1980});
+create (CarlosRodriguez:Infected {name:'Carlos Rodriguez', born: 1978});
+create (SusanaDiaz:Infected {name:'Susana Diaz', born: 1990});
+create (LilianaMontes:Infected {name:'Liliana Montes', born: 1988});
+create (GilbertoLopez:Infected {name:'Gilberto Lopez', born: 1997});
+create (PaulaParra:Infected {name:'Paula Parra', born: 1996});
+create (FranciscoContreras:Infected {name:'Francisco Contreras', born: 1936});
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Daniela Quiroga"  AND (b.name = "Hospital Mederi" or b.name = "Hospital San Ignacio" or b.name = "Universidad Nacional de Colombia")
+CREATE (a)-[r:WAS {date:'10-03-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE (a.name = "David Amaya"  or a.name = "Susana Diaz" ) AND b.name = "Universidad Central" 
+CREATE (a)-[r:WAS {date:'15-03-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE (a.name = "Liliana Montes"  or a.name = "Gilberto Lopez" or a.name = "Paola Parra" ) AND b.name = "Centro Mayor" 
+CREATE (a)-[r:WAS {date:'01-03-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE (a.name = "Fernando Carrillo"  ) AND (b.name = "Centro Mayor" or b.name = "CAI Teusaquillo" or b.name = "Bancolombia calle 60 con 13")
+CREATE (a)-[r:WAS {date:'03-03-2020'}]->(b); 
+
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Carlos Rodriguez"  AND (b.name = "Parque Nacional" or b.name = "El corral Plaza 39")
+CREATE (a)-[r:WAS {date:'10-03-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Carlos Rodriguez"  AND b.name = "Banco De Bogotá Dirección General" 
+CREATE (a)-[r:WORKS {date:'10-01-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Paula Parra"  AND b.name = "Alkosto calle 68" 
+CREATE (a)-[r:WORKS {date:'11-03-2000'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Francisco Contreras"  AND b.name = "MUY calle 36" 
+CREATE (a)-[r:WORKS {date:'11-02-2020'}]->(b); 
+
+MATCH (a:Infected), (b:Location) WHERE a.name = "Johanna Martinez"  AND (b.name = "Renault Marcali calle 35" or b.name = "Estacion calle 100" or b.name ="Colegio Nicolas Esguerra")
+CREATE (a)-[r:WAS {date:'15-03-2020'}]->(b); 
+
+
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Luis Perez'AND b.name='Universidad Distrital Fco Jose de Caldas sede 40' CREATE (a)-[r:WAS {date:'11-09-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ricardo Marquez'AND b.name='Universidad Nacional de Colombia' CREATE (a)-[r:WAS {date:'26-05-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ana Lopez'AND b.name='Centro comercial Gran Estacion' CREATE (a)-[r:WAS {date:'17-01-2020'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Lorena Guzman'AND b.name='Colegio Luis Carlos Galan Sarmiento' CREATE (a)-[r:WAS {date:'16-10-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Eduardo Ruiz'AND b.name='Estadio Nemesio Camacho el Campin' CREATE (a)-[r:WAS {date:'10-04-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Juan Gamboa'AND b.name='Parque Metropolitano Simon Bolivar' CREATE (a)-[r:WAS {date:'05-08-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Milena Roa'AND b.name='Banco De Bogotá Dirección General' CREATE (a)-[r:WAS {date:'21-11-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Luisa Quitian'AND b.name='Parque Nacional' CREATE (a)-[r:WAS {date:'13-03-2020'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Amanda Gutierrez'AND b.name='Exito av 68 con americas' CREATE (a)-[r:WAS {date:'28-07-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Felipe Nariño'AND b.name='Hospital San Ignacio' CREATE (a)-[r:WAS {date:'01-07-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jerson Gonzalez'AND b.name='El corral Plaza 39' CREATE (a)-[r:WAS {date:'01-02-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jairo Castillo'AND b.name='Renault Marcali calle 35' CREATE (a)-[r:WAS {date:'12-04-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ernesto Farias'AND b.name='Estacion calle 100' CREATE (a)-[r:WAS {date:'23-08-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Dolly Ruiz'AND b.name='MUY calle 36' CREATE (a)-[r:WAS {date:'23-06-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Carlos Bejarano'AND b.name='Colegio Nicolas Esguerra' CREATE (a)-[r:WAS {date:'01-10-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Camilo Pinto'AND b.name='Bancolombia calle 60 con 13' CREATE (a)-[r:WAS {date:'26-03-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Juliana Galvis'AND b.name='Hospital Mederi' CREATE (a)-[r:WAS {date:'15-07-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Andrea Serna'AND b.name='CAI Teusaquillo' CREATE (a)-[r:WAS {date:'10-01-2020'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jorge Atuesta'AND b.name='Centro Mayor' CREATE (a)-[r:WAS {date:'14-11-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Adriana Tono'AND b.name='Alkosto calle 68' CREATE (a)-[r:WAS {date:'03-05-2019'}]->(b) ;
+
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ana Lopez'AND b.name='El corral Plaza 39' CREATE (a)-[r:WORKS {date:'16-12-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Lorena Guzman'AND b.name='Renault Marcali calle 35' CREATE (a)-[r:WORKS {date:'27-01-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Luis Perez'AND b.name='Estacion calle 100' CREATE (a)-[r:WORKS {date:'10-01-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ricardo Marquez'AND b.name='MUY calle 36' CREATE (a)-[r:WORKS {date:'29-03-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Juan Gamboa'AND b.name='Colegio Nicolas Esguerra' CREATE (a)-[r:WORKS {date:'17-01-2016'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Milena Roa'AND b.name='Bancolombia calle 60 con 13' CREATE (a)-[r:WORKS {date:'10-07-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Luisa Quitian'AND b.name='Hospital Mederi' CREATE (a)-[r:WORKS {date:'09-09-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Amanda Gutierrez'AND b.name='CAI Teusaquillo' CREATE (a)-[r:WORKS {date:'23-04-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Eduardo Ruiz'AND b.name='Centro Mayor' CREATE (a)-[r:WORKS {date:'07-08-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jerson Gonzalez'AND b.name='Alkosto calle 68' CREATE (a)-[r:WORKS {date:'11-01-2016'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jairo Castillo'AND b.name='Universidad Distrital Fco Jose de Caldas sede 40' CREATE (a)-[r:WORKS {date:'12-02-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Ernesto Farias'AND b.name='Universidad Nacional de Colombia' CREATE (a)-[r:WORKS {date:'10-11-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Dolly Ruiz'AND b.name='Centro comercial Gran Estacion' CREATE (a)-[r:WORKS {date:'24-05-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Carlos Bejarano'AND b.name='Colegio Luis Carlos Galan Sarmiento' CREATE (a)-[r:WORKS {date:'20-04-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Camilo Pinto'AND b.name='Estadio Nemesio Camacho el Campin' CREATE (a)-[r:WORKS {date:'18-12-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Juliana Galvis'AND b.name='Parque Metropolitano Simon Bolivar' CREATE (a)-[r:WORKS {date:'20-07-2019'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Andrea Serna'AND b.name='Banco De Bogotá Dirección General' CREATE (a)-[r:WORKS {date:'16-01-2016'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Jorge Atuesta'AND b.name='Parque Nacional' CREATE (a)-[r:WORKS {date:'06-12-2018'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Adriana Tono'AND b.name='Exito av 68 con americas' CREATE (a)-[r:WORKS {date:'29-01-2017'}]->(b) ;
+MATCH (a:Uninfected), (b:Location) WHERE a.name='Felipe Nariño'AND b.name='Hospital San Ignacio' CREATE (a)-[r:WORKS {date:'22-12-2017'}]->(b) ;
+
+MATCH (a), (b:Symptom) WHERE a.name='Ana Lopez'AND (b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal'or b.name='Secreción nasal'or b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Lorena Guzman'AND (b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal'or b.name='Secreción nasal'or b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Luis Perez'AND (b.name='Cansancio'or b.name='Congestión nasal'or b.name='Secreción nasal'or b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Ricardo Marquez'AND (b.name='Congestión nasal'or b.name='Secreción nasal'or b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Juan Gamboa'AND (b.name='Secreción nasal'or b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Milena Roa'AND (b.name='Dolor de garganta'or b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Luisa Quitian'AND (b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Amanda Gutierrez'AND (b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Eduardo Ruiz'AND (b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Jerson Gonzalez'AND (b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Jairo Castillo'AND (b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Ernesto Farias'AND (b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Dolly Ruiz'AND (b.name='Tos seca'or b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Carlos Bejarano'AND (b.name='Fiebre'or b.name='Cansancio'or b.name='Congestión nasal') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Camilo Pinto'AND (b.name='Cansancio'or b.name='Congestión nasal' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Juliana Galvis'AND (b.name='Congestión nasal') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Adriana Tono'AND (b.name='Dolor de cabeza'or b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Felipe Nariño'AND (b.name='Diarrea'or b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Daniela Quiroga'AND (b.name='Dificultad para respirar'or b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre'  ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='David Amaya'AND (b.name='Dolor muscular'or b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Fernando Carrillo'AND (b.name='Estornudo'or b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Johanna Martinez'AND (b.name='Ojos irritados'or b.name='Tos seca'or b.name='Fiebre') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Carlos Rodriguez'AND (b.name='Tos seca'or b.name='Fiebre' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Susana Diaz'AND (b.name='Fiebre') CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Paula Parra'AND (b.name='Secreción nasal'or b.name='Dolor de garganta' ) CREATE (a)-[r:HAS]->(b) ;
+MATCH (a), (b:Symptom) WHERE a.name='Francisco Contreras'AND (b.name='Dolor de garganta') CREATE (a)-[r:HAS]->(b) ;
+
